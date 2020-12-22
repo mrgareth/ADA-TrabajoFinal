@@ -1,12 +1,17 @@
 
 public class Region {
 	protected String nombre;
-	protected int positivos;
-	public Region(String nombre, int positivos) {
+	//TOTAL CASOS,	FALLECIDOS,	TOTAL MUESTRAS,	POSITIVIDAD (%),	LETALIDAD (%)
+	protected double[] items = new double[5];
+	public Region(String nombre, double positivos, double fallecidos, double muestras, double positividad, double letalidad ) {
 		this.nombre = nombre;
-		this.positivos = positivos;
+		items[0] = positivos;
+		items[1] = fallecidos; 
+		items[2] = muestras;
+		items[3] = positividad; 
+		items[4] = letalidad;
 	}
-//	protected int[] items;para cuando utilicemos varios items
+
 	
 	
 }
